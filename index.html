@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy | Premium Product Menu</title>
+    <meta
+      name="description"
+      content="Galaxy premium product menu with WhatsApp contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+  </head>
+  <body>
+    <section class="entry-screen" id="entryScreen">
+      <div class="entry-card">
+        <img
+          class="gate-logo"
+          src="./galaxy-logo.png"
+          alt="Galaxy logo"
+        />
+        <p class="gate-kicker" data-i18n="ageKicker">Age Confirmation</p>
+        <h2 class="gate-title" data-i18n="ageTitle">Are you above 18 years old?</h2>
+        <p class="gate-copy" data-i18n="ageCopy">
+          You must confirm that you are at least 18 years old before entering this website.
+        </p>
+        <div class="gate-actions">
+          <button class="primary-btn gate-action-btn" id="confirmAgeButton" type="button">
+            <span data-i18n="ageConfirm">Yes, I am above 18</span>
+          </button>
+          <button class="secondary-btn gate-action-btn" id="declineAgeButton" type="button">
+            <span data-i18n="ageDecline">No, leave website</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-shell" id="mainSite" style="display: none;">
+      <div class="header-tools">
+        <div class="language-switcher" aria-label="Language selector">
+          <button class="lang-btn is-active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="ms" type="button">BM</button>
+          <button class="lang-btn" data-lang="zh" type="button">中文</button>
+        </div>
+      </div>
+
+      <header class="brand-header" id="top">
+        <div class="topbar">
+          <img
+            class="brand-logo"
+            src="./galaxy-logo.png"
+            alt="Galaxy logo"
+          />
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">Signature Selection</p>
+          <h2 class="hero-title" data-i18n="heroTitle">
+            Explore the Galaxy collection in a refined and modern showcase.
+          </h2>
+          <p class="hero-copy" data-i18n="heroCopy">
+            Discover our featured lineup, browse the menu with ease, and contact us directly on
+            WhatsApp for more information.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#products" data-i18n="browseButton">Browse Menu</a>
+            <a
+              class="secondary-btn whatsapp-link"
+              href="#contact"
+              data-i18n="heroContactButton"
+            >
+              Contact on WhatsApp
+            </a>
+          </div>
+          <p class="hero-note" data-i18n="heroNote">
+            Premium presentation. Personal assistance. Fast reply on WhatsApp.
+          </p>
+          <div class="hero-highlights" aria-label="Highlights">
+            <span class="highlight-pill" data-i18n="highlightOne">Premium Selection</span>
+            <span class="highlight-pill" data-i18n="highlightTwo">Fast WhatsApp Reply</span>
+            <span class="highlight-pill" data-i18n="highlightThree">Elegant Presentation</span>
+          </div>
+        </div>
+      </section>
+
+      <main>
+        <section class="products-section" id="products">
+          <div class="section-heading">
+            <div class="section-line" aria-hidden="true"></div>
+            <p class="section-kicker" data-i18n="menuKicker">Product Menu</p>
+            <h3 data-i18n="menuTitle">Galaxy Signature Lineup</h3>
+            <p data-i18n="menuCopy">
+              Select a product below and reach out for product details.
+            </p>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-image is-empty">
+                <img
+                  class="product-photo"
+                  src="./assets/galaxy-s.png"
+                  alt="Galaxy S product"
+                />
+                <div class="placeholder-frame">
+                  <span data-i18n="imagePlaceholder">Image Placeholder</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
+                <h4>Galaxy S</h4>
+                <p class="product-copy" data-i18n="productCardCopy">
+                  Contact us on WhatsApp for product details and availability.
+                </p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image is-empty">
+                <img
+                  class="product-photo"
+                  src="./assets/galaxy-u.png"
+                  alt="Galaxy U product"
+                />
+                <div class="placeholder-frame">
+                  <span data-i18n="imagePlaceholder">Image Placeholder</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
+                <h4>Galaxy U</h4>
+                <p class="product-copy" data-i18n="productCardCopy">
+                  Contact us on WhatsApp for product details and availability.
+                </p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image is-empty">
+                <img
+                  class="product-photo"
+                  src="./assets/galaxy-k.png"
+                  alt="Galaxy K product"
+                />
+                <div class="placeholder-frame">
+                  <span data-i18n="imagePlaceholder">Image Placeholder</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
+                <h4>Galaxy K</h4>
+                <p class="product-copy" data-i18n="productCardCopy">
+                  Contact us on WhatsApp for product details and availability.
+                </p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image is-empty">
+                <img
+                  class="product-photo"
+                  src="./assets/galaxy-v.png"
+                  alt="Galaxy V product"
+                />
+                <div class="placeholder-frame">
+                  <span data-i18n="imagePlaceholder">Image Placeholder</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
+                <h4>Galaxy V</h4>
+                <p class="product-copy" data-i18n="productCardCopy">
+                  Contact us on WhatsApp for product details and availability.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <div class="contact-card">
+            <div class="contact-badge" data-i18n="contactBadge">Direct WhatsApp Assistance</div>
+            <p class="section-kicker" data-i18n="contactKicker">Contact</p>
+            <h3 data-i18n="contactTitle">Interested in the Galaxy lineup?</h3>
+            <p data-i18n="contactCopy">
+              Tap the WhatsApp button below and our team will reply with more information as soon
+              as possible.
+            </p>
+            <a
+              class="whatsapp-btn whatsapp-link"
+              href="https://wa.me/60187911077?text=Hi%2C%20I'm%20interested%20in%20your%20product"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="contactButton"
+            >
+              Chat on WhatsApp
+            </a>
+            <p class="contact-subcopy" data-i18n="contactSubcopy">
+              Share the product name you are interested in and we will assist you directly.
+            </p>
+            <p class="contact-number">WhatsApp: +60 18-791 1077</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js?v=3"></script>
+  </body>
+</html>
