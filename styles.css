@@ -381,7 +381,7 @@ a {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 22px;
+  gap: 18px;
 }
 
 .product-card,
@@ -407,10 +407,10 @@ a {
 
 .product-image {
   position: relative;
-  aspect-ratio: 1 / 1.12;
+  aspect-ratio: 1 / 0.5;
   display: grid;
   place-items: center;
-  padding: 12px;
+  padding: 0;
   background:
     radial-gradient(circle at top, rgba(217, 179, 108, 0.18), transparent 55%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
@@ -419,10 +419,10 @@ a {
 
 .placeholder-frame {
   position: absolute;
-  inset: 8px;
+  inset: 0;
   display: grid;
   place-items: center;
-  border-radius: 20px;
+  border-radius: 0;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)),
     var(--panel-soft);
@@ -431,9 +431,9 @@ a {
 .placeholder-frame::before {
   content: "";
   position: absolute;
-  inset: 10px;
+  inset: 2px;
   border: 1px dashed rgba(217, 179, 108, 0.34);
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
 .product-image span {
@@ -451,7 +451,7 @@ a {
   object-fit: contain;
   object-position: center bottom;
   display: block;
-  transform: scale(1.05);
+  transform: scale(1.85);
 }
 
 .product-image.is-empty .product-photo {
@@ -463,14 +463,14 @@ a {
 }
 
 .product-info {
-  padding: 24px 22px 26px;
+  padding: 10px 10px 12px;
   text-align: center;
 }
 
 .product-info h4 {
-  margin: 10px 0 0;
+  margin: 4px 0 0;
   font-family: "Cormorant Garamond", serif;
-  font-size: 2.05rem;
+  font-size: 1.45rem;
   font-weight: 600;
   line-height: 1;
 }
@@ -482,12 +482,13 @@ a {
 }
 
 .product-copy {
-  margin: 12px 0 0;
-  max-width: 26ch;
-  font-size: 0.94rem;
+  margin: 4px 0 0;
+  max-width: 22ch;
+  font-size: 0.72rem;
   margin-left: auto;
   margin-right: auto;
   text-wrap: balance;
+  line-height: 1.5;
 }
 
 .contact-card {
@@ -616,7 +617,7 @@ a {
   }
 
   .product-image {
-    padding: 10px;
+    padding: 0;
   }
 
   .contact-card {
