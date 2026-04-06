@@ -461,13 +461,9 @@ a {
 .product-card--s .product-photo,
 .product-card--u .product-photo,
 .product-card--k .product-photo,
-.product-card--v .product-photo {
+.product-card--v .product-photo,
+.product-card--b .product-photo{
   object-position: center 48%;
-}
-
-.product-card--b .product-photo {
-  object-position: center 50%;
-  transform: scale(1.08);
 }
 
 .product-image.is-empty .product-photo {
