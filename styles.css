@@ -407,10 +407,10 @@ a {
 
 .product-image {
   position: relative;
-  aspect-ratio: 1 / 1.2;
+  aspect-ratio: 1 / 1.12;
   display: grid;
   place-items: center;
-  padding: 22px;
+  padding: 12px;
   background:
     radial-gradient(circle at top, rgba(217, 179, 108, 0.18), transparent 55%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
@@ -419,10 +419,10 @@ a {
 
 .placeholder-frame {
   position: absolute;
-  inset: 14px;
+  inset: 8px;
   display: grid;
   place-items: center;
-  border-radius: 24px;
+  border-radius: 20px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)),
     var(--panel-soft);
@@ -431,9 +431,9 @@ a {
 .placeholder-frame::before {
   content: "";
   position: absolute;
-  inset: 12px;
+  inset: 10px;
   border: 1px dashed rgba(217, 179, 108, 0.34);
-  border-radius: 18px;
+  border-radius: 14px;
 }
 
 .product-image span {
@@ -451,6 +451,7 @@ a {
   object-fit: contain;
   object-position: center bottom;
   display: block;
+  transform: scale(1.05);
 }
 
 .product-image.is-empty .product-photo {
@@ -615,7 +616,7 @@ a {
   }
 
   .product-image {
-    padding: 16px;
+    padding: 10px;
   }
 
   .contact-card {
