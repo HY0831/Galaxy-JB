@@ -455,11 +455,11 @@ a {
 }
 
 .product-card--s .product-photo {
-  transform: translateX(0%) translateY(3%) scale(1.42);
+  transform: translateX(0%) translateY(2%) scale(1.26);
 }
 
 .product-card--u .product-photo {
-  transform: translateX(0%) translateY(3%) scale(1.42);
+  transform: translateX(0%) translateY(2%) scale(1.16);
 }
 
 .product-card--k .product-photo {
@@ -467,7 +467,7 @@ a {
 }
 
 .product-card--v .product-photo {
-  transform: translateX(0%) translateY(3%) scale(1.42);
+  transform: translateX(0%) translateY(2%) scale(1.08);
 }
 
 .product-image.is-empty .product-photo {
