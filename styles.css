@@ -494,12 +494,18 @@ a {
 }
 
 .product-copy {
-  margin: 4px 0 0;
+  margin: 8px auto 0;
   font-size: 0.72rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-wrap: balance;
-  line-height: 1.5;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.product-copy p {
+  margin: 0;
+}
+
+.product-copy p + p {
+  margin-top: 3px;
 }
 
 .contact-card {
