@@ -480,13 +480,19 @@ a {
   text-align: left;
 }
 
+.product-label,
+.product-info h4,
+.product-code {
+  width: 100%;
+  text-align: center;
+}
+
 .product-info h4 {
   margin: 4px 0 0;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 1;
-  text-align: center;
 }
 
 .product-copy,
@@ -501,7 +507,6 @@ a {
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .product-copy {
