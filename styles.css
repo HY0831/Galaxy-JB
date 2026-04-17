@@ -199,6 +199,7 @@ a {
   text-transform: uppercase;
   font-size: 0.75rem;
   color: var(--accent);
+  text-align: center;
 }
 
 .language-switcher {
