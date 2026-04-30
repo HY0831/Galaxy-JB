@@ -353,6 +353,7 @@ a {
   outline: none;
 }
 
+.promotion-section,
 .products-section,
 .contact-section {
   padding-top: 96px;
@@ -379,6 +380,24 @@ a {
 .section-heading h3,
 .contact-card h3 {
   font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.promotion-poster-wrap {
+  width: min(100%, 760px);
+  margin: 40px auto 0;
+  padding: 12px;
+  border: 1px solid rgba(217, 179, 108, 0.2);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    var(--bg-soft);
+  box-shadow: var(--shadow);
+}
+
+.promotion-poster {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
 }
 
 .product-grid {
@@ -645,9 +664,20 @@ a {
     width: 100%;
   }
 
+  .promotion-section,
   .products-section,
   .contact-section {
     padding-top: 64px;
+  }
+
+  .promotion-poster-wrap {
+    margin-top: 28px;
+    padding: 8px;
+    border-radius: 22px;
+  }
+
+  .promotion-poster {
+    border-radius: 14px;
   }
 
   .product-grid {
