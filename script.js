@@ -4,7 +4,7 @@ if (maintenanceMode) {
   document.body.innerHTML = `
     <main class="maintenance-page">
       <h1>Website Under Maintenance</h1>
-      <p>We will be back soon. For urgent enquiries, please contact us on WhatsApp.</p>
+      <p>We will be back soon. For urgent enquiries, kindly contact us on WhatsApp.</p>
       <a href="https://wa.me/60187911077">Contact WhatsApp</a>
     </main>
   `;
