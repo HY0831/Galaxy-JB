@@ -1,4 +1,4 @@
-const maintenanceMode = false;
+const maintenanceMode = true;
 
 if (maintenanceMode) {
   document.body.innerHTML = `
