@@ -1,4 +1,3 @@
-
 const maintenanceMode = false;
 
 if (maintenanceMode) {
@@ -14,6 +13,7 @@ if (maintenanceMode) {
 }
 
 const whatsappUrl = "https://wa.me/60187911077?text=Hi%2C%20I'm%20interested%20in%20your%20product";
+const productOrder = ["v", "u", "s", "k", "b"];
 
 const products = {
   v: { image: "./assets/galaxy-v.jpg" },
@@ -33,23 +33,20 @@ const translations = {
     navProducts: "Products",
     navPromotion: "Promotion",
     navContact: "Contact",
-    heroEyebrow: "Signature Selection",
+    carouselKicker: "Swipe Collection",
+    carouselTitle: "Galaxy Signature Selection",
+    carouselCopy: "Swipe across the cards to explore each product. The active card stays solid while the others remain partially transparent.",
+    swipeHint: "Swipe or tap the cards",
     featuredLabel: "Signature Product",
-    browseButton: "Browse Menu",
-    menuKicker: "Product Menu",
-    menuTitle: "Galaxy Signature Lineup",
-    menuCopy: "Browse the current collection below and contact us for more product information.",
     promoKicker: "Promotion",
     promoTitle: "Current Galaxy Promotion",
     promoCopy: "Check out our latest campaign and contact us on WhatsApp for more details.",
     contactKicker: "Contact",
-    contactBadge: "Direct WhatsApp Assistance",
     contactTitle: "Interested in the Galaxy lineup?",
     contactCopy: "Tap the WhatsApp button below and our team will reply with more information as soon as possible.",
     contactSubcopy: "Share the product name you are interested in and we will assist you directly.",
     contactButton: "Chat on WhatsApp",
     footerNote: "Premium product information with direct WhatsApp assistance.",
-    viewButton: "View Product",
     productNameB: "GALAXY KRETEK BOLEH",
     productCodeB: "(GKBO)",
     productB1: "Milder clove aroma, similar to the taste of LA",
@@ -89,23 +86,20 @@ const translations = {
     navProducts: "Produk",
     navPromotion: "Promosi",
     navContact: "Hubungi",
-    heroEyebrow: "Pilihan Istimewa",
+    carouselKicker: "Koleksi Swipe",
+    carouselTitle: "Pilihan Istimewa Galaxy",
+    carouselCopy: "Leret merentasi kad untuk meneroka setiap produk. Kad aktif kekal jelas manakala kad lain lebih lutsinar.",
+    swipeHint: "Leret atau tekan kad",
     featuredLabel: "Produk Istimewa",
-    browseButton: "Lihat Menu",
-    menuKicker: "Menu Produk",
-    menuTitle: "Barisan Istimewa Galaxy",
-    menuCopy: "Lihat koleksi semasa di bawah dan hubungi kami untuk maklumat lanjut produk.",
     promoKicker: "Promosi",
     promoTitle: "Promosi Galaxy Terkini",
     promoCopy: "Lihat kempen terbaru kami dan hubungi kami di WhatsApp untuk maklumat lanjut.",
     contactKicker: "Hubungi",
-    contactBadge: "Bantuan WhatsApp Secara Terus",
     contactTitle: "Berminat dengan pilihan Galaxy?",
     contactCopy: "Tekan butang WhatsApp di bawah dan pasukan kami akan membalas dengan maklumat lanjut secepat mungkin.",
     contactSubcopy: "Nyatakan nama produk yang anda minati dan kami akan bantu anda secara terus.",
     contactButton: "Chat di WhatsApp",
     footerNote: "Maklumat produk premium dengan bantuan terus melalui WhatsApp.",
-    viewButton: "Lihat Produk",
     productNameB: "GALAXY KRETEK BOLEH",
     productCodeB: "(GKBO)",
     productB1: "Aroma cengkih yang lebih lembut, hampir menyerupai rasa LA",
@@ -145,23 +139,20 @@ const translations = {
     navProducts: "产品",
     navPromotion: "促销活动",
     navContact: "联系",
-    heroEyebrow: "精选系列",
+    carouselKicker: "滑动系列",
+    carouselTitle: "Galaxy 精选产品",
+    carouselCopy: "左右滑动卡片即可查看每款产品。当前卡片保持清晰，其他卡片则稍微透明。",
+    swipeHint: "滑动或点击卡片",
     featuredLabel: "主打产品",
-    browseButton: "查看目录",
-    menuKicker: "产品目录",
-    menuTitle: "Galaxy 精选产品",
-    menuCopy: "浏览以下当前系列，并联系我们获取更多产品详情。",
     promoKicker: "促销活动",
     promoTitle: "Galaxy 最新促销",
     promoCopy: "查看我们的最新活动，并通过 WhatsApp 联系我们了解更多详情。",
     contactKicker: "联系",
-    contactBadge: "WhatsApp 直接协助",
     contactTitle: "对 Galaxy 系列感兴趣？",
     contactCopy: "点击下方 WhatsApp 按钮，我们的团队会尽快回复您并提供更多信息。",
     contactSubcopy: "告诉我们您感兴趣的产品名称，我们将直接为您提供协助。",
     contactButton: "WhatsApp 咨询",
     footerNote: "高级产品资料展示，并提供 WhatsApp 直接协助。",
-    viewButton: "查看产品",
     productNameB: "GALAXY KRETEK BOLEH",
     productCodeB: "(GKBO)",
     productB1: "GKBO 的丁香风味柔和，与 LA 的口味几乎相似",
@@ -195,11 +186,11 @@ const translations = {
 };
 
 const productMap = {
-  v: { nameKey: "productNameV", codeKey: "productCodeV", descKeys: ["productV1", "productV2", "productV3"], label: { en: "Full Flavour", ms: "Full Flavour", zh: "Full Flavour" } },
-  u: { nameKey: "productNameU", codeKey: "productCodeU", descKeys: ["productU1", "productU2", "productU3"], label: { en: "Blue Menthol", ms: "Blue Menthol", zh: "Blue Menthol" } },
-  s: { nameKey: "productNameS", codeKey: "productCodeS", descKeys: ["productS1", "productS2", "productS3"], label: { en: "Gold S Premium", ms: "Gold S Premium", zh: "Gold S Premium" } },
-  k: { nameKey: "productNameK", codeKey: "productCodeK", descKeys: ["productK1", "productK2", "productK3", "productK4", "productK5"], label: { en: "Kretek Baru", ms: "Kretek Baru", zh: "Kretek Baru" } },
-  b: { nameKey: "productNameB", codeKey: "productCodeB", descKeys: ["productB1", "productB2", "productB3", "productB4", "productB5"], label: { en: "Kretek Boleh", ms: "Kretek Boleh", zh: "Kretek Boleh" } }
+  v: { nameKey: "productNameV", codeKey: "productCodeV", descKeys: ["productV1", "productV2", "productV3"] },
+  u: { nameKey: "productNameU", codeKey: "productCodeU", descKeys: ["productU1", "productU2", "productU3"] },
+  s: { nameKey: "productNameS", codeKey: "productCodeS", descKeys: ["productS1", "productS2", "productS3"] },
+  k: { nameKey: "productNameK", codeKey: "productCodeK", descKeys: ["productK1", "productK2", "productK3", "productK4", "productK5"] },
+  b: { nameKey: "productNameB", codeKey: "productCodeB", descKeys: ["productB1", "productB2", "productB3", "productB4", "productB5"] }
 };
 
 const languageButtons = document.querySelectorAll(".lang-btn");
@@ -211,64 +202,145 @@ const confirmAgeButton = document.getElementById("confirmAgeButton");
 const declineAgeButton = document.getElementById("declineAgeButton");
 const menuButton = document.getElementById("menuButton");
 const mobileMenu = document.getElementById("mobileMenu");
-const productChips = document.querySelectorAll(".product-chip");
-const productFocusButtons = document.querySelectorAll("[data-product-focus]");
-const heroPhoto = document.getElementById("heroPhoto");
-const heroProductName = document.getElementById("heroProductName");
-const heroProductCode = document.getElementById("heroProductCode");
-const heroProductDesc = document.getElementById("heroProductDesc");
+const cardsTrack = document.getElementById("cardsTrack");
+const cardsViewport = document.getElementById("cardsViewport");
+const swipeDots = document.getElementById("swipeDots");
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+const activeProductName = document.getElementById("activeProductName");
+const activeProductCode = document.getElementById("activeProductCode");
+const activeProductDesc = document.getElementById("activeProductDesc");
 const stageIndex = document.getElementById("stageIndex");
 
 let currentLanguage = localStorage.getItem("galaxy-language") || "en";
-let currentProduct = "v";
+let currentIndex = 0;
+let touchStartX = 0;
+let touchDeltaX = 0;
+let isDragging = false;
+let ignoreCardClickUntil = 0;
+let pointerStartX = null;
 
-const focusSequence = ["v", "u", "s", "k", "b"];
-
-function setWhatsAppLink(language) {
+function setWhatsAppLink() {
   whatsappLinks.forEach((link) => {
     link.href = whatsappUrl;
   });
 }
 
-function updateProductDisplay(productId) {
-  currentProduct = productId;
-  const product = productMap[productId];
-  const dictionary = translations[currentLanguage];
-  heroPhoto.src = products[productId].image;
-  heroPhoto.alt = `${dictionary[product.nameKey]} product`;
-  heroProductName.textContent = dictionary[product.nameKey];
-  heroProductCode.textContent = dictionary[product.codeKey];
-  heroProductDesc.innerHTML = product.descKeys.map((key) => `<li>${dictionary[key]}</li>`).join("");
-  const index = focusSequence.indexOf(productId) + 1;
-  stageIndex.textContent = `${String(index).padStart(2, "0")} / 05`;
+function mod(index, total) {
+  return (index + total) % total;
+}
 
-  productChips.forEach((chip) => {
-    const active = chip.dataset.product === productId;
-    chip.classList.toggle("is-active", active);
-    chip.setAttribute("aria-pressed", active ? "true" : "false");
+function getRelativeOffset(index, activeIndex) {
+  const total = productOrder.length;
+  let diff = index - activeIndex;
+  if (diff > total / 2) diff -= total;
+  if (diff < -total / 2) diff += total;
+  return diff;
+}
+
+function renderCards() {
+  const dictionary = translations[currentLanguage];
+  cardsTrack.innerHTML = productOrder
+    .map((productId) => {
+      const product = productMap[productId];
+      return `
+        <button class="product-slide" type="button" data-product="${productId}" aria-label="${dictionary[product.nameKey]}">
+          <div class="product-slide-inner">
+            <div class="product-slide-image-wrap">
+              <img class="product-slide-image" src="${products[productId].image}" alt="${dictionary[product.nameKey]} product" />
+            </div>
+            <div>
+              <p class="product-slide-name">${dictionary[product.nameKey]}</p>
+              <p class="product-slide-code">${dictionary[product.codeKey]}</p>
+            </div>
+          </div>
+        </button>
+      `;
+    })
+    .join("");
+
+  swipeDots.innerHTML = productOrder
+    .map((productId, index) => `<button class="swipe-dot" type="button" data-index="${index}" aria-label="Go to product ${index + 1}"></button>`)
+    .join("");
+
+  cardsTrack.querySelectorAll(".product-slide").forEach((card) => {
+    card.addEventListener("click", (event) => {
+      // A touch swipe may produce a synthetic click after touchend.
+      if (Date.now() < ignoreCardClickUntil) {
+        event.preventDefault();
+        return;
+      }
+      const index = productOrder.indexOf(card.dataset.product);
+      goToIndex(index);
+    });
   });
 
-  const targetCard = document.getElementById(`card-${productId}`);
-  if (targetCard) {
-    document.querySelectorAll(".product-card").forEach((card) => card.classList.remove("is-focused"));
-    targetCard.classList.add("is-focused");
-  }
+  swipeDots.querySelectorAll(".swipe-dot").forEach((dot) => {
+    dot.addEventListener("click", () => {
+      goToIndex(Number(dot.dataset.index));
+    });
+  });
+}
+
+function updateCarouselLayout() {
+  const cards = cardsTrack.querySelectorAll(".product-slide");
+  const dotButtons = swipeDots.querySelectorAll(".swipe-dot");
+  const isMobile = window.innerWidth <= 760;
+  const shift = isMobile ? 120 : 205;
+  const scaleStep = isMobile ? 0.14 : 0.18;
+
+  cards.forEach((card, index) => {
+    const offset = getRelativeOffset(index, currentIndex);
+    const absOffset = Math.abs(offset);
+    const scale = Math.max(0.64, 1 - absOffset * scaleStep);
+    const translateX = offset * shift;
+    const translateY = absOffset === 0 ? 0 : absOffset * 12;
+
+    card.style.transform = `translateX(calc(-50% + ${translateX}px)) translateY(${translateY}px) scale(${scale})`;
+    card.classList.toggle("is-active", absOffset === 0);
+    card.classList.toggle("is-near", absOffset === 1);
+    card.classList.toggle("is-far", absOffset >= 2);
+    card.style.pointerEvents = absOffset <= 1 ? "auto" : "none";
+    card.setAttribute("aria-hidden", absOffset > 2 ? "true" : "false");
+  });
+
+  dotButtons.forEach((dot, index) => {
+    dot.classList.toggle("is-active", index === currentIndex);
+    dot.setAttribute("aria-pressed", index === currentIndex ? "true" : "false");
+  });
+}
+
+function updateProductDetails() {
+  const dictionary = translations[currentLanguage];
+  const productId = productOrder[currentIndex];
+  const product = productMap[productId];
+
+  activeProductName.textContent = dictionary[product.nameKey];
+  activeProductCode.textContent = dictionary[product.codeKey];
+  activeProductDesc.innerHTML = product.descKeys.map((key) => `<li>${dictionary[key]}</li>`).join("");
+  stageIndex.textContent = `${String(currentIndex + 1).padStart(2, "0")} / ${String(productOrder.length).padStart(2, "0")}`;
+}
+
+function goToIndex(index) {
+  currentIndex = mod(index, productOrder.length);
+  updateCarouselLayout();
+  updateProductDetails();
+}
+
+function goNext() {
+  goToIndex(currentIndex + 1);
+}
+
+function goPrev() {
+  goToIndex(currentIndex - 1);
 }
 
 function applyTranslations(language) {
   const dictionary = translations[language];
+
   translatableNodes.forEach((node) => {
     const key = node.dataset.i18n;
-    if (dictionary[key]) {
-      node.textContent = dictionary[key];
-    }
-  });
-
-  document.querySelectorAll("[data-static-label]").forEach((node) => {
-    const key = node.dataset.staticLabel;
-    if (productMap[key]) {
-      node.textContent = productMap[key].label[language];
-    }
+    if (dictionary[key]) node.textContent = dictionary[key];
   });
 
   languageButtons.forEach((button) => {
@@ -277,8 +349,10 @@ function applyTranslations(language) {
     button.setAttribute("aria-pressed", isActive ? "true" : "false");
   });
 
-  setWhatsAppLink(language);
-  updateProductDisplay(currentProduct);
+  setWhatsAppLink();
+  renderCards();
+  updateCarouselLayout();
+  updateProductDetails();
   localStorage.setItem("galaxy-language", language);
 }
 
@@ -316,17 +390,55 @@ languageButtons.forEach((button) => {
   });
 });
 
-productChips.forEach((chip) => {
-  chip.addEventListener("click", () => updateProductDisplay(chip.dataset.product));
+prevButton?.addEventListener("click", goPrev);
+nextButton?.addEventListener("click", goNext);
+
+cardsViewport?.addEventListener("touchstart", (event) => {
+  touchStartX = event.changedTouches[0].clientX;
+  touchDeltaX = 0;
+  isDragging = true;
+}, { passive: true });
+
+cardsViewport?.addEventListener("touchmove", (event) => {
+  if (!isDragging) return;
+  touchDeltaX = event.changedTouches[0].clientX - touchStartX;
+}, { passive: true });
+
+cardsViewport?.addEventListener("touchend", () => {
+  if (!isDragging) return;
+  if (Math.abs(touchDeltaX) > 40) {
+    ignoreCardClickUntil = Date.now() + 350;
+    if (touchDeltaX < 0) goNext();
+    else goPrev();
+  }
+  touchDeltaX = 0;
+  isDragging = false;
 });
 
-productFocusButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const productId = button.dataset.productFocus;
-    updateProductDisplay(productId);
-    document.getElementById("top")?.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+// Desktop users can drag cards with a mouse or stylus as well as use the arrows.
+cardsViewport?.addEventListener("pointerdown", (event) => {
+  if (event.pointerType !== "touch") pointerStartX = event.clientX;
 });
+
+cardsViewport?.addEventListener("pointerup", (event) => {
+  if (pointerStartX === null || event.pointerType === "touch") return;
+  const distance = event.clientX - pointerStartX;
+  pointerStartX = null;
+  if (Math.abs(distance) > 45) {
+    ignoreCardClickUntil = Date.now() + 350;
+    if (distance < 0) goNext();
+    else goPrev();
+  }
+});
+
+cardsViewport?.addEventListener("pointercancel", () => { pointerStartX = null; });
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowRight") goNext();
+  if (event.key === "ArrowLeft") goPrev();
+});
+
+window.addEventListener("resize", updateCarouselLayout);
 
 if (localStorage.getItem("galaxy-age-confirmed") === "true") {
   revealSite();

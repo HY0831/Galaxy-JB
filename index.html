@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=2" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -90,28 +90,47 @@
       </header>
 
       <main id="main">
-        <section class="hero-section">
-          <div class="container hero-grid">
-            <div class="hero-stage">
-              <div class="hero-stage-top">
-                <p class="eyebrow" data-i18n="heroEyebrow">Signature Selection</p>
-                <p class="stage-index" id="stageIndex">01 / 05</p>
-              </div>
-              <div class="hero-photo-wrap">
-                <img class="hero-photo" id="heroPhoto" src="./assets/galaxy-v.jpg" alt="Galaxy Red Full Flavour product" />
-              </div>
+        <section class="swipe-section" id="products">
+          <div class="container">
+            <div class="section-heading section-heading-center">
+              <p class="section-kicker" data-i18n="carouselKicker">Swipe Collection</p>
+              <h1 class="hero-heading" data-i18n="carouselTitle">Galaxy Signature Selection</h1>
+              <p class="section-copy" data-i18n="carouselCopy">
+                Swipe across the cards to explore each product. The active card stays solid while the others remain partially transparent.
+              </p>
             </div>
 
-            <div class="hero-copy-block">
-              <p class="hero-mini" data-i18n="featuredLabel">Signature Product</p>
-              <h2 class="hero-title" id="heroProductName">GALAXY RED FULL FLAVOUR</h2>
-              <p class="hero-code" id="heroProductCode">(GRV)</p>
-              <ul class="hero-list" id="heroProductDesc">
-                <li>A classic in the Galaxy series and one of the most stable-selling core flavours</li>
-                <li>Rich and full-bodied taste with a smooth, non-harsh finish</li>
-                <li>Widely accepted by both retailers and consumers</li>
-              </ul>
-              <div class="hero-actions-row">
+            <div class="swipe-shell">
+              <button class="carousel-arrow carousel-arrow-left" id="prevButton" type="button" aria-label="Previous product">
+                ‹
+              </button>
+
+              <div class="carousel-stage" id="carouselStage" aria-live="polite">
+                <div class="cards-viewport" id="cardsViewport">
+                  <div class="cards-track" id="cardsTrack"></div>
+                </div>
+              </div>
+
+              <button class="carousel-arrow carousel-arrow-right" id="nextButton" type="button" aria-label="Next product">
+                ›
+              </button>
+            </div>
+
+            <div class="swipe-meta">
+              <div>
+                <p class="swipe-meta-label" data-i18n="swipeHint">Swipe or tap the cards</p>
+                <p class="swipe-meta-index" id="stageIndex">01 / 05</p>
+              </div>
+              <div class="swipe-dots" id="swipeDots" aria-label="Product positions"></div>
+            </div>
+
+            <section class="product-detail-card" aria-labelledby="activeProductName">
+              <div class="product-detail-head">
+                <div>
+                  <p class="detail-kicker" data-i18n="featuredLabel">Signature Product</p>
+                  <h2 class="product-detail-name" id="activeProductName">GALAXY RED FULL FLAVOUR</h2>
+                  <p class="product-detail-code" id="activeProductCode">(GRV)</p>
+                </div>
                 <a
                   class="primary-btn whatsapp-link"
                   href="https://wa.me/60187911077?text=Hi%2C%20I'm%20interested%20in%20your%20product"
@@ -121,157 +140,19 @@
                 >
                   Chat on WhatsApp
                 </a>
-                <a class="secondary-btn" href="#products" data-i18n="browseButton">Browse Menu</a>
               </div>
-              <div class="product-switcher" aria-label="Product selector">
-                <button class="product-chip is-active" type="button" data-product="v">
-                  <b>GRV</b>
-                  <span data-static-label="v">Full Flavour</span>
-                </button>
-                <button class="product-chip" type="button" data-product="u">
-                  <b>GMU</b>
-                  <span data-static-label="u">Blue Menthol</span>
-                </button>
-                <button class="product-chip" type="button" data-product="s">
-                  <b>GBS</b>
-                  <span data-static-label="s">Gold S Premium</span>
-                </button>
-                <button class="product-chip" type="button" data-product="k">
-                  <b>GKB</b>
-                  <span data-static-label="k">Kretek Baru</span>
-                </button>
-                <button class="product-chip" type="button" data-product="b">
-                  <b>GKBO</b>
-                  <span data-static-label="b">Kretek Boleh</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="catalogue-strip">
-          <div class="container strip-inner">
-            <p><strong>Galaxy</strong></p>
-            <p data-i18n="menuTitle">Galaxy Signature Lineup</p>
-            <p data-i18n="contactBadge">Direct WhatsApp Assistance</p>
-          </div>
-        </section>
-
-        <section class="products-section" id="products">
-          <div class="container">
-            <div class="section-heading">
-              <p class="section-kicker" data-i18n="menuKicker">Product Menu</p>
-              <h3 data-i18n="menuTitle">Galaxy Signature Lineup</h3>
-              <p class="section-copy" data-i18n="menuCopy">
-                Browse the current collection below and contact us for more product information.
-              </p>
-            </div>
-
-            <div class="product-grid">
-              <article class="product-card" id="card-v">
-                <div class="product-media">
-                  <img src="./assets/galaxy-v.jpg" alt="Galaxy Red Full Flavour product" />
-                </div>
-                <div class="product-content">
-                  <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
-                  <h4 data-i18n="productNameV">GALAXY RED FULL FLAVOUR</h4>
-                  <p class="product-code" data-i18n="productCodeV">(GRV)</p>
-                  <ul class="product-copy">
-                    <li data-i18n="productV1">A classic in the Galaxy series and one of the most stable-selling core flavours</li>
-                    <li data-i18n="productV2">Rich and full-bodied taste with a smooth, non-harsh finish</li>
-                    <li data-i18n="productV3">Widely accepted by both retailers and consumers</li>
-                  </ul>
-                  <div class="product-card-actions">
-                    <button class="secondary-btn small-btn" type="button" data-product-focus="v" data-i18n="viewButton">View Product</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card" id="card-u">
-                <div class="product-media">
-                  <img src="./assets/galaxy-u.jpg" alt="Galaxy Blue Menthol product" />
-                </div>
-                <div class="product-content">
-                  <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
-                  <h4 data-i18n="productNameU">GALAXY BLUE MENTHOL</h4>
-                  <p class="product-code" data-i18n="productCodeU">(GMU)</p>
-                  <ul class="product-copy">
-                    <li data-i18n="productU1">A combination of cooling menthol and light tobacco</li>
-                    <li data-i18n="productU2">One of the most popular choices among younger consumers</li>
-                    <li data-i18n="productU3">Delivers a refreshing taste preferred by menthol smokers</li>
-                  </ul>
-                  <div class="product-card-actions">
-                    <button class="secondary-btn small-btn" type="button" data-product-focus="u" data-i18n="viewButton">View Product</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card" id="card-s">
-                <div class="product-media">
-                  <img src="./assets/galaxy-s.jpg" alt="Galaxy Gold S Premium product" />
-                </div>
-                <div class="product-content">
-                  <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
-                  <h4 data-i18n="productNameS">GALAXY GOLD S PREMIUM</h4>
-                  <p class="product-code" data-i18n="productCodeS">(GBS)</p>
-                  <ul class="product-copy">
-                    <li data-i18n="productS1">A higher-end premium product in the Galaxy series</li>
-                    <li data-i18n="productS2">Smoother and more refined texture</li>
-                    <li data-i18n="productS3">Features an elegant aroma with a premium smoking experience</li>
-                  </ul>
-                  <div class="product-card-actions">
-                    <button class="secondary-btn small-btn" type="button" data-product-focus="s" data-i18n="viewButton">View Product</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card" id="card-k">
-                <div class="product-media">
-                  <img src="./assets/galaxy-k.jpg" alt="Galaxy Kretek Baru product" />
-                </div>
-                <div class="product-content">
-                  <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
-                  <h4 data-i18n="productNameK">GALAXY KRETEK BARU</h4>
-                  <p class="product-code" data-i18n="productCodeK">(GKB)</p>
-                  <ul class="product-copy">
-                    <li data-i18n="productK1">Rich clove aroma, closely resembling the taste of Gudang Garam</li>
-                    <li data-i18n="productK2">Affordable pricing, suitable for mass consumers</li>
-                    <li data-i18n="productK3">Smooth draw, easy to accept for new kretek smokers</li>
-                    <li data-i18n="productK4">Well-balanced flavour, suitable for daily smoking</li>
-                    <li data-i18n="productK5">Popular among young adult kretek smokers</li>
-                  </ul>
-                  <div class="product-card-actions">
-                    <button class="secondary-btn small-btn" type="button" data-product-focus="k" data-i18n="viewButton">View Product</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="product-card" id="card-b">
-                <div class="product-media">
-                  <img src="./assets/galaxy-b.jpg" alt="Galaxy Kretek Boleh product" />
-                </div>
-                <div class="product-content">
-                  <p class="product-label" data-i18n="featuredLabel">Signature Product</p>
-                  <h4 data-i18n="productNameB">GALAXY KRETEK BOLEH</h4>
-                  <p class="product-code" data-i18n="productCodeB">(GKBO)</p>
-                  <ul class="product-copy">
-                    <li data-i18n="productB1">Milder clove aroma, similar to the taste of LA</li>
-                    <li data-i18n="productB2">Affordable pricing, suitable for mass consumers</li>
-                    <li data-i18n="productB3">Smooth draw, easy to accept for new kretek smokers</li>
-                    <li data-i18n="productB4">Well-balanced flavour, suitable for daily smoking</li>
-                    <li data-i18n="productB5">Popular among young adult kretek smokers</li>
-                  </ul>
-                  <div class="product-card-actions">
-                    <button class="secondary-btn small-btn" type="button" data-product-focus="b" data-i18n="viewButton">View Product</button>
-                  </div>
-                </div>
-              </article>
-            </div>
+              <ul class="product-detail-list" id="activeProductDesc">
+                <li>A classic in the Galaxy series and one of the most stable-selling core flavours</li>
+                <li>Rich and full-bodied taste with a smooth, non-harsh finish</li>
+                <li>Widely accepted by both retailers and consumers</li>
+              </ul>
+            </section>
           </div>
         </section>
 
         <section class="promotion-section" id="promotion">
-          <div class="container promotion-grid">
+          <div class="container promotion-grid single-poster-grid">
             <div class="promotion-copy">
               <p class="section-kicker" data-i18n="promoKicker">Promotion</p>
               <h3 data-i18n="promoTitle">Current Galaxy Promotion</h3>
@@ -339,6 +220,6 @@
       </footer>
     </div>
 
-    <script src="./script.js?v=1"></script>
+    <script src="./script.js?v=3"></script>
   </body>
 </html>
