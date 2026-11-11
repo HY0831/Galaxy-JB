@@ -54,7 +54,7 @@ button { cursor: pointer; }
   width: min(560px, 100%); padding: 40px 32px; border: 1px solid var(--line); border-radius: var(--radius-xl);
   background: rgba(24, 24, 24, 0.94); box-shadow: var(--shadow); text-align: center;
 }
-.gate-logo { width: min(340px, 85%); margin: 0 auto 24px; border-radius: 12px; }
+.gate-logo { width: min(340px, 85%); height: 148px; margin: 0 auto 24px; object-fit: cover; object-position: center; border-radius: 12px; }
 .gate-kicker, .section-kicker, .product-label, .hero-mini, .eyebrow {
   margin: 0; font-size: 14px; line-height: 20px; color: var(--muted); text-transform: none;
 }
@@ -71,7 +71,7 @@ button { cursor: pointer; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 84px; }
 .brand-link { display: inline-flex; align-items: center; }
-.brand-logo { width: min(280px, 38vw); min-width: 180px; border-radius: 10px; }
+.brand-logo { width: min(280px, 38vw); min-width: 180px; height: 84px; object-fit: cover; object-position: center; border-radius: 10px; }
 .desktop-nav, .footer-nav { display: flex; align-items: center; gap: 24px; }
 .desktop-nav a, .footer-nav a, .mobile-menu a {
   color: var(--muted); transition: color .3s var(--ease), transform .3s var(--ease);
@@ -207,7 +207,7 @@ button { cursor: pointer; }
 @media (max-width: 700px) {
   .container { width: min(100% - 24px, 1200px); }
   .header-inner { min-height: 74px; }
-  .brand-logo { width: min(220px, 52vw); min-width: 150px; }
+  .brand-logo { width: min(220px, 52vw); min-width: 150px; height: 64px; }
   .hero-section { padding-top: 20px; }
   .hero-stage, .hero-copy-block, .product-card, .promotion-copy, .promotion-poster-wrap, .contact-card { border-radius: 24px; }
   .hero-stage { padding: 16px; }
