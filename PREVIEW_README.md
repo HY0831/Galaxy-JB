@@ -1,28 +1,25 @@
-# Galaxy JB — Concept A interactive swipe preview
-
-This draft branch contains the site owner's review build. **Do not merge into `main` until explicitly approved.**
+# Galaxy JB — Black Gold Swipeable Preview
 
 ## Preview
-- Host: https://galaxy-jb-concept-a-preview.onrender.com
+- [Live review site](https://galaxy-jb-concept-a-preview.onrender.com)
 - Branch: `preview/concept-a-redesign-2026-11-11`
-- GitHub Pages production domain `galaxyjb.com` is unchanged.
+- This is a **preview-only** build. Do not merge until the owner approves.
 
-## Layout
-1. 18+ age entry
-2. Single interactive carousel of the five Galaxy products: active card solid, side cards subdued
-3. Product details update when the card changes
-4. Original promotion poster
-5. WhatsApp contact
-6. Footer labelled **Galaxy**
+## Design palette (from owner reference)
+- Off-white: `#F7F7F7`
+- Gold: `#F5B553`
+- Copper-brown: `#854836`
+- Black: `#000000`
 
-No duplicate catalogue grid. Touch swipe, mouse/stylus drag, navigation arrows, clickable cards, dot navigation, and keyboard arrow keys.
+Black-and-gold site shell, glowing gold borders and selected-card treatment, off-white product detail panel, copper-brown promotion block, gold WhatsApp contact panel. Original swipe interactions unchanged.
 
-## Preserved original content
-- `galaxy-logo.jpeg`
-- `assets/galaxy-{v,u,s,k,b}.jpg`
-- `assets/promotion-poster.jpeg`
-- EN/BM/中文 product names and descriptions (verbatim)
-- Original WhatsApp destination and prefilled text
+## Preserved
+- Original company logo `galaxy-logo.jpeg`
+- All five original cigarette images `assets/galaxy-*.jpg`
+- Original poster `assets/promotion-poster.jpeg`
+- Original EN / BM / 中文 product descriptions and names
+- Original WhatsApp phone and link
+- Footer label **Galaxy** only
+- 18+ gate, swipeable cards and language controls
 
-## Before public production release
-Review desktop/mobile behavior, real image loading, age entry, translations, all five descriptions, and applicable publishing requirements. The preview is public; it is not an access-controlled staging environment.
+Production GitHub Pages site `galaxyjb.com` and branch `main` remain unchanged.
