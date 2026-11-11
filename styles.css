@@ -295,15 +295,15 @@ body {
 .swipe-dot { background: rgba(245,181,83,.22); }
 .swipe-dot.is-active { background: var(--gold); }
 .product-detail-card {
-  color: #000;
-  background: var(--ivory);
+  color: var(--ivory);
+  background: linear-gradient(145deg, #281B17 0%, #201612 50%, #160F0D 100%);
   border-color: var(--gold);
   box-shadow: 0 22px 60px rgba(0,0,0,.34), 0 0 0 1px rgba(245,181,83,.14);
 }
-.product-detail-card .detail-kicker, .product-detail-code { color: var(--copper); }
-.product-detail-name { color: #000; }
-.product-detail-list { color: #000; }
-.product-detail-list li::marker { color: var(--copper); }
+.product-detail-card .detail-kicker, .product-detail-code { color: var(--gold); }
+.product-detail-name { color: var(--ivory); }
+.product-detail-list { color: var(--ivory); }
+.product-detail-list li::marker { color: var(--gold); }
 .product-detail-card .primary-btn { background: var(--gold); color: #000; border-color: var(--gold); }
 .product-detail-card .primary-btn:hover, .product-detail-card .primary-btn:focus-visible {
   background: #000; color: var(--ivory); border-color: #000;
