@@ -20,6 +20,8 @@
 }
 
 * { box-sizing: border-box; }
+/* Hidden content must remain hidden even when components set display: grid/flex. */
+[hidden] { display: none !important; }
 html, body { overflow-x: clip; }
 html { scroll-behavior: smooth; }
 body {
